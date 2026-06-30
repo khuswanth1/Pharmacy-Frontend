@@ -5,7 +5,7 @@ import axios from "axios";
 //   /api/payments/** → Payment Service (port 8085)
 // This matches Step 7 of the tutorial but uses the gateway instead of
 // hitting port 8085 directly so JWT + CORS headers are handled centrally.
-const API_BASE = process.env.REACT_APP_API_URL || "https://pharmacybackend-ugzy.onrender.com";
+const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:8089";
 
 // Helper: backend wraps all responses as { success, message, data }
 // Unwrap to get the actual payload.

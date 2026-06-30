@@ -3,7 +3,7 @@ import axios from 'axios';
 // Points at the API Gateway, which aggregates all microservices (see Swagger at
 // http://localhost:8089/swagger-ui.html). Override with REACT_APP_API_URL.
 const apiClient = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://pharmacybackend-ugzy.onrender.com',
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8089',
   headers: {
     'Content-Type': 'application/json',
   },
